@@ -107,12 +107,14 @@
          */
         const NETWORK_DATA = {
             "CREATIVITATIS": [
-                { name: "Creativitatis", url: "https://creativitatis.dev", description: "Soon™" },
-                { name: "Creativitatis Blog", url: "https://creativitatis.blog", description: "The blog - Soon™" },
+                { name: "CREATIVITATIS", url: "https://creativitatis.dev", description: "Soon™"},
+                { name: "CREATIVITATIS BLOG", url: "https://blog.creativitatis.dev", description: "The blog - Soon™" },
+                { name: "CREATIVITATIS STUDIO", url: "https://studio.creativitatis.dev", description: "Yes, we also make games :p" },
             ],
-            "CREEPERHUB ECOSYSTEM": [
+            "CREEPERHUB ECOSYSTEM (Deprecated)": [
                 { name: "CreeperHUB", url: "https://creeperhub.net", description: "Ex-main hub, soon v3.0" },
                 { name: "CreeperHUB.com", url: "https://about.creeperhub.com", description: "CreeperHUB hosted side projects" },
+                { name: "tinyy.dev", url: "https://tinyy.dev", description: "Short links for projects + articles" },
             ],
             "UTILITIES & APPS": [
                 { name: "creepers.sbs", url: "https://creepers.sbs", description: "Free subdomain service" },
@@ -120,23 +122,25 @@
                 { name: "askfor.pics", url: "https://askfor.pics", description: "Link-In-Bio" },
             ],
             "OTAKUFORGE":  [
-                { name: "Otakuforge", url: "#", description: "Upcoming social network", status: "current" },
-                { name: "MyOtaku", url: "https://otaku.my", description: "Otakuforge's Identity" },
+                { name: "Otakuforge", url: "https://otakuforge.moe", description: "Upcoming social network" },
+                { name: "OTAKU ID", url: "https://otakuforge.org", description: "Otakuforge's Identity", status: "current" },
                 { name: "otaku.tube", url: "https://otaku.tube", description: "Otakuforge's Peertube instance" },
             ],
             "THE CREATOR": [
                 { name: "Giocoliere", url: "https://giocoliere.dev", description: "Personal Wesbsite v0.7 :P" },
                 { name: "gioco.help", url: "https://gioco.help", description: "Support portal + archives" },
+                { name: "Secret O_O", url: "#", description: "Personal website. I'll publish it soon" },
             ],
-            "SHORT URL": [
-                { name: "tinyy.dev", url: "https://tinyy.dev", description: "Short links for projects + articles" },
-                { name: "MClink", url: "https://mc-l.ink", description: "Short URL for Minecraft related content"   },
+            "INFRASTRUCTURE": [
+                { name: "CREATIVITATIS.repos", url: "https://git.creativitatis.dev/", description: "Self-hosted repositories" },
+                { name: "CREATIVITATIS.status", url: "https://old.status.creativitatis.dev/", description: "Infrastructure status" },
+                { name: "CREATIVITATIS.pages", url: "https://pages.creativitatis.dev/", description: "Internal publishing service" }
             ],
             "CREEPERCRAFT": [
-                { name: "Creepercraft", url: "https://creepercraft.net", description: "Minecraft server coming soon" },
+                { name: "CREEPERCRAFT", url: "https://creepercraft.net", description: "Minecraft server, coming soon" },
             ],
             "CREEPERLAB": [
-                { name: "CreeperLAB", url: "https://creeperlab.org", description: "Sources for Minecraft Devs" },
+                { name: "CreeperLAB", url: "https://lab.creepercraft.net", description: "Sources for Minecraft Devs" },
             ],
         };
 
@@ -145,11 +149,11 @@
             const root = document.getElementById('header-root');
             root.innerHTML = `
                 <div class="fixed top-0 left-0 right-0 z-[9999] flex items-center px-4 sm:px-6 h-9 justify-between transition-all duration-200" 
-                     style="background-color: var(--of-header-bg); color: var(--of-header-text); border-bottom: 1px solid var(--of-header-border);">
+                     style="background-color: var(--lab-header-bg); color: var(--lab-header-text); border-bottom: 1px solid var(--lab-header-border);">
                     <a href="https://creativitatis.dev" class="text-xs font-bold tracking-widest uppercase hover:opacity-60 transition-opacity flex items-center gap-2">
                         <span class="w-2 h-2 bg-black rounded-full"></span>
                         <span class="hidden xs:inline sm:inline">CREATIVITATIS</span>
-                        <span class="xs:hidden sm:hidden">C.HUB</span>
+                        <span class="xs:hidden sm:hidden">TECH</span>
                     </a>
                     <div class="relative h-full flex items-center" id="network-dropdown-wrapper">
                         <button id="dropdown-btn" class="flex items-center gap-1.5 text-xs uppercase tracking-wider hover:opacity-60 transition-opacity py-2 px-2 -mr-2">
